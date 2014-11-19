@@ -54,6 +54,8 @@ public class Event {
 		System.out.println("Name: " + event.next().replace('_', ' ')); 
 		System.out.println("Guard Aggression: " + event.nextInt()); 
 		System.out.println("Bribe: " + event.nextBoolean()); 
+		System.out.println("Bribeable: " + event.nextBoolean()); 
+		System.out.println("Does it Free A Prisoner: " + event.nextBoolean()); 
 		
 		
 	}
