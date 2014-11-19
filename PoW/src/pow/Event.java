@@ -48,8 +48,10 @@ public class Event {
 	int inventoryPosition = 0;
 	
 	public Event() throws FileNotFoundException{
-		Scanner file = new Scanner(new File("data/events.txt"));
-		System.out.println("Name: " + file.next() + " Message: " + " Number: " + file.nextInt());
+		//event reads in an event from "events.txt"
+		Scanner event = new Scanner(new File("data/events.txt"));
+		//Test call of the event.txt file
+		System.out.println("Name: " + event.next().replace('_', ' ')); 
 		
 		
 	}
