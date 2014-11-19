@@ -52,6 +52,8 @@ public class Event {
 		Scanner event = new Scanner(new File("data/events.txt"));
 		//Test call of the event.txt file
 		System.out.println("Name: " + event.next().replace('_', ' ')); 
+		System.out.println("Guard Aggression: " + event.nextInt()); 
+		System.out.println("Bribe: " + event.nextBoolean()); 
 		
 		
 	}

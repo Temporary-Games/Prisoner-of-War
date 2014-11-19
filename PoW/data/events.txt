@@ -1,1 +1,1 @@
-Chocolate_Bar
+Chocolate_Bar 1 true false false
