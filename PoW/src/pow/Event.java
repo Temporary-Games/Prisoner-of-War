@@ -40,9 +40,16 @@ public class Event {
 	 */
 	boolean bribable;
 	
+	/*
+	 * If not 0, if it has a non-zero number, it will equal to a certain value
+	 * of the inventory class array
+	 * 
+	 */
+	int inventoryPosition = 0;
+	
 	public Event() throws FileNotFoundException{
-		Scanner file = new Scanner(new File("events.txt"));
-		System.out.println("Name: " + file.next() + " Message: " + " Number: ");
+		Scanner file = new Scanner(new File("data/events.txt"));
+		System.out.println("Name: " + file.next() + " Message: " + " Number: " + file.nextInt());
 		
 		
 	}
