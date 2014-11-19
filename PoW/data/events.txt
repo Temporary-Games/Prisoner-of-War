@@ -1,1 +1,2 @@
-Chocolate_Bar 1 true false false
+Chocolate_Bar 0 true false false
+Cigar_Box -5 true false true
