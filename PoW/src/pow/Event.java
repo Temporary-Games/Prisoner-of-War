@@ -1,5 +1,9 @@
 package pow;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Event {
 
 	//Names the card, such as "You find a chocolate bar!"
@@ -36,7 +40,10 @@ public class Event {
 	 */
 	boolean bribable;
 	
-	public Event(){
+	public Event() throws FileNotFoundException{
+		Scanner file = new Scanner(new File("events.txt"));
+		System.out.println("Name: " + file.next() + " Message: " + " Number: ");
+		
 		
 	}
 	
