@@ -39,5 +39,6 @@ public class Inventory {
 				}
 			}
 		}
+		scan.close();
 	}
 }

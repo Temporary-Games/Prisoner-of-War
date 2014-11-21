@@ -53,7 +53,7 @@ public class Event {
 		System.out.println("Bribe: " + event.nextBoolean());
 		System.out.println("Bribeable: " + event.nextBoolean());
 		System.out.println("Does it Free A Prisoner: " + event.nextBoolean());
-
+		event.close();
 	}
 
 }
