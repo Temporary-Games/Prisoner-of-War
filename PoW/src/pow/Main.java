@@ -1,22 +1,28 @@
 package pow;
 
 import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Main {
 	// rounds of game
-	private int rounds = 0;
 
 	public static void main(String[] args) {
-		try {
-			Event stuff = new Event();
-		} catch (FileNotFoundException e) {
-			System.out.println("You borked teh codez.");
-			e.printStackTrace();
-		}
-		
+		int rounds = 30;
 		Inventory playerInv = new Inventory(0, 0, 0, 0, 0);
-		playerInv.addItem(0);
-		
-	}
+		for (int x = 0; x < rounds; x++) {
+			try {
+				Event stuff = new Event();
+			} catch (FileNotFoundException e) {
+				System.out.println("You borked teh codez.");
+				e.printStackTrace();
+			}
+			do{
+				Scanner scan = new Scanner(System.in);
+				
+				
+			}while(!(scan.nextLine().equalsIgnoreCase("next")));
 
+		}
+
+	}
 }
