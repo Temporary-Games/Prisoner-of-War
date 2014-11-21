@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Inventory {
 	// inventory instantiation
-	public int[] inventory = new int[4];
+	public int[] inventory = new int[5];
 
 	// inventory constructor
 	public Inventory(int a1, int a2, int a3, int a4, int a5) {

@@ -40,6 +40,11 @@ public class Event {
 	 */
 	int inventoryPosition = 0;
 
+	/*
+	 * Item number value.
+	 */
+	int itemNumber = 0;
+
 	public Event() throws FileNotFoundException {
 		// event reads in an event from "events.txt"
 		Scanner event = new Scanner(new File("data/events.txt"));
@@ -48,11 +53,21 @@ public class Event {
 		for (int i = 0; i < x; i++) {
 			event.nextLine();
 		}
-		System.out.println("Name: " + event.next().replace('_', ' '));
+
+		title = event.next().replace('_', ' ');
+		guardAggression = event.nextInt();
+		bribe = event.nextBoolean();
+		bribable = event.nextBoolean();
+		freesAPrisoner = event.nextBoolean();
+		itemNumber = event.nextInt();
+
+		/*System.out.println("Name: " + event.next().replace('_', ' '));
 		System.out.println("Guard Aggression: " + event.nextInt());
 		System.out.println("Bribe: " + event.nextBoolean());
 		System.out.println("Bribeable: " + event.nextBoolean());
 		System.out.println("Does it Free A Prisoner: " + event.nextBoolean());
+		System.out.println("Item Number: " + event.nextInt());
+		*/
 		event.close();
 	}
 
