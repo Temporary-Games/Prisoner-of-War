@@ -45,6 +45,30 @@ public class Event {
 	 */
 	int itemNumber = 0;
 
+	public String getTitle() {
+		return title;
+	}
+
+	public int getGuardAggression() {
+		return guardAggression;
+	}
+
+	public boolean getBribe() {
+		return bribe;
+	}
+
+	public boolean getBribable() {
+		return bribable;
+	}
+
+	public boolean getFreesAPrisoner() {
+		return freesAPrisoner;
+	}
+
+	public int getItemNumber() {
+		return itemNumber;
+	}
+
 	public Event() throws FileNotFoundException {
 		// event reads in an event from "events.txt"
 		Scanner event = new Scanner(new File("data/events.txt"));
@@ -61,13 +85,13 @@ public class Event {
 		freesAPrisoner = event.nextBoolean();
 		itemNumber = event.nextInt();
 
-		/*System.out.println("Name: " + event.next().replace('_', ' '));
-		System.out.println("Guard Aggression: " + event.nextInt());
-		System.out.println("Bribe: " + event.nextBoolean());
-		System.out.println("Bribeable: " + event.nextBoolean());
-		System.out.println("Does it Free A Prisoner: " + event.nextBoolean());
-		System.out.println("Item Number: " + event.nextInt());
-		*/
+		System.out.println("Name: " + getTitle());
+		System.out.println("Guard Aggression: " + getGuardAggression());
+		System.out.println("Bribe: " + getBribe());
+		System.out.println("Bribeable: " + getBribable());
+		System.out.println("Does it Free A Prisoner: " + getFreesAPrisoner());
+		System.out.println("Item Number: " + getItemNumber());
+
 		event.close();
 	}
 
