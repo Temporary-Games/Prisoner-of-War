@@ -16,8 +16,9 @@ public class Main {
 				System.out.println("You borked teh codez.");
 				e.printStackTrace();
 			}
+			Scanner scan = new Scanner(System.in);
 			do{
-				Scanner scan = new Scanner(System.in);
+			
 				
 				
 			}while(!(scan.nextLine().equalsIgnoreCase("next")));
