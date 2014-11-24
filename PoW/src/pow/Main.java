@@ -14,14 +14,20 @@ public class Main {
 		for (int currentRound = 0; currentRound < rounds; currentRound++) {
 			Event stuff = new Event();
 			Scanner scan = new Scanner(System.in);
-			do{
+			do {
 				System.out.println("Round: " + currentRound);
-				guardAgro += stuff.getGuardAggression();
 				System.out.println(stuff.getTitle());
+				guardAgro += stuff.getGuardAggression();
+				System.out.println("Guard Agression: " + guardAgro);
+				if (guardAgro >= 10) {
+					guardAgro = 0;
+					savedPrisoners--;
+					System.out.println("A prisoner was killed by the guards.");
+				}
 				
 				
-				
-			}while(!(scan.nextLine().equalsIgnoreCase("next")));
+
+			} while (!(scan.nextLine().equalsIgnoreCase("next")));
 
 		}
 
