@@ -17,6 +17,8 @@ public class Main {
 			do {
 				System.out.println("Round: " + currentRound);
 				System.out.println(stuff.getTitle());
+				if(stuff.getItemNumber() != 0)
+					playerInv.addItem(stuff.getItemNumber());
 				guardAgro += stuff.getGuardAggression();
 				System.out.println("Guard Agression: " + guardAgro);
 				if (guardAgro >= 10) {
