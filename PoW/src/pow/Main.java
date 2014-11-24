@@ -6,19 +6,19 @@ import java.util.Scanner;
 public class Main {
 	// rounds of game
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		int rounds = 30;
+		int guardAgro = 0;
+		int savedPrisoners = 0;
 		Inventory playerInv = new Inventory(0, 0, 0, 0, 0);
-		for (int x = 0; x < rounds; x++) {
-			try {
-				Event stuff = new Event();
-			} catch (FileNotFoundException e) {
-				System.out.println("You borked teh codez.");
-				e.printStackTrace();
-			}
+		for (int currentRound = 0; currentRound < rounds; currentRound++) {
+			Event stuff = new Event();
 			Scanner scan = new Scanner(System.in);
 			do{
-			
+				System.out.println("Round: " + currentRound);
+				guardAgro += stuff.getGuardAggression();
+				System.out.println(stuff.getTitle());
+				
 				
 				
 			}while(!(scan.nextLine().equalsIgnoreCase("next")));

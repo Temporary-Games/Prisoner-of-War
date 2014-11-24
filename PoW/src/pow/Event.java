@@ -85,12 +85,15 @@ public class Event {
 		freesAPrisoner = event.nextBoolean();
 		itemNumber = event.nextInt();
 
-		System.out.println("Name: " + getTitle());
-		System.out.println("Guard Aggression: " + getGuardAggression());
-		System.out.println("Bribe: " + getBribe());
-		System.out.println("Bribeable: " + getBribable());
-		System.out.println("Does it Free A Prisoner: " + getFreesAPrisoner());
-		System.out.println("Item Number: " + getItemNumber());
+		/*
+		 * System.out.println("Name: " + getTitle());
+		 * System.out.println("Guard Aggression: " + getGuardAggression());
+		 * System.out.println("Bribe: " + getBribe());
+		 * System.out.println("Bribeable: " + getBribable());
+		 * System.out.println("Does it Free A Prisoner: " +
+		 * getFreesAPrisoner()); System.out.println("Item Number: " +
+		 * getItemNumber());
+		 */
 
 		event.close();
 	}
